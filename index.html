@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Montserrat:wght@200;400;500;800&family=Poppins:wght@200;400;500&family=Staatliches&display=swap"
+        rel="stylesheet">
+	<title>My Web Profile</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 480px)" href="css/responsive.css">
+    <link rel='stylesheet' media='screen and (min-width: 480px) and (max-width: 800px)' href='css/responsive.css' />
+</head>
+
+<!-- HEADER -->
+<header>
+    <div id="nav-menu">
+        <div class="toggle-menu" onclick="toggle()"></div>
+        <div class="toggle-menu" onclick="toggle(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <side class="side-bar">
+            <ul>
+                <li><a href="#home"><strong>HOME</strong></a></li>
+                <li><a href="#about"><strong>ABOUT</strong></a></li>
+                <li><a href="https://www.linkedin.com/in/hww97" target="blank"><strong>GALLERY</strong> </a></li>
+                <li><a href="#github_contribution"><strong>PORTFOLIO</strong></a></li>
+                <li><a href="#contact"><strong>CONTACT ME</strong></a></li>
+            </ul>
+        </side>
+    </div>
+</header>
+
+<!-- HOME -->
+
+<body>
+	<div id="home">
+		<div class="landing">
+			<h2>HELLO THERE,</h2>
+			<h2>WELCOME TO MY PAGE</h2>
+			<br>
+			<h1 id="landing-effect">Hendri Wisnu Wardani</h1>
+			<h3 id="slogan">I AM</h3><br>
+			<p>This personal home page was created as a way for me to introduce myself, and as an assigment for IFB2J class Web Programming <br><b>#UniversitasMuliaBalikpapan</b></p>
+		</div>		
+	</div>
+
+	<!-- ABOUT -->
+	<div id='about'>
+		<div class="profile">
+            <h1>About me</h1>
+            <img src="assets/pp2.jpg">
+            <h3> HENDRI | 23 | MALE</h3>
+            <h6>Universitas Mulia, Balikpapan - Indonesia</h6>
+            <br>
+            <!--<h3> HI THERE !</H3> -->
+            <P>
+            	I am a hard worker who always wants to try new things in life.
+
+				My life motto is "if other people can do it, I can do it too"
+			</p>
+			<br>
+			<button><a href="#contact">ANY QUESTION ?</a></button>
+		</div>
+	</div>
+
+	<div id="github_contribution">
+
+        <div class="github-title">
+            <h1>my github</h1>
+            <h2>contribution</h2>
+        </div>
+        <div class="github-template">
+            <div data="https://github.com/hendriwisnu" class="github-pinner flat" style="visibility: hidden;"></div>
+            <script src="GitHubPinner.js"></script>
+            <div class="github-repos">
+                <div data="https://github.com/hendriwisnu/codeigniter" class="github-pinner flat"
+                    style="visibility: hidden;"></div>
+                <div data="https://github.com/hendriwisnu/html-css-javascript" class="github-pinner flat"
+                    style="visibility: hidden;"></div>
+                <div data="https://github.com/hendriwisnu/3D-Vellocity-Model" class="github-pinner flat"
+                    style="visibility: hidden;"></div>
+            </div>
+        </div>
+        <img class="imgCont" src="http://ghchart.rshah.org/d16644/hendriwisnu" alt="hendriwisnu github" />
+    </div>
+
+	<div id="contact">
+        <div class="contact">
+            <div class="getintouch">
+                <h1 class="title">Social Media</h1>
+                <br>
+                <p>Kalian bisa mengunjungiku disini!
+                    <strong>@hendriwisnu</strong> dimanapun!
+                </p>
+                <ul class="socialmedia">
+                    <li class="socmed">
+                        <a href="https://github.com/hendriwisnu/hendriwisnu.gethub.io" target="_blank">
+                            <img src="assets/git.png" alt="">
+                        </a>
+                    </li>
+                    <li class="socmed">
+                        <a href="https://www.facebook.com/hendrywisnu.wardani" target="_blank">
+                            <img src="assets/fb.png" alt="">
+                        </a>
+                    </li>
+                    <li class="socmed">
+                        <a href="https://www.linkedin.com/in/hww97" target="_blank">
+                            <img src="assets/link.png" alt="">
+                        </a>
+                    </li>
+                    <li class="socmed">
+                        <a href="https://www.instagram.com/hendriwisnu/" target="_blank">
+                            <img src="assets/ig.png" alt="">
+                        </a>
+                    </li>
+                    <li class="socmed">
+                        <a href="https://www.pinterest.com/hendriwisnu9" target="_blank">
+                            <img src="assets/pin.png" alt="">
+                        </a>
+                    </li>
+                    <li class="socmed">
+                        <a href="https://twitter.com/Hwwxxrdn?t=U_HD0wXsCagk1F8ZktAtHg&s=08" target="_blank">
+                            <img src="assets/twitter.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <h1 class="title">Text Me!</h1>
+                <hr>
+                <form action="#" method="PUSH">
+                    <input type="text" id="name" required placeholder="Y O U R  N A M E">
+                    <input type="email" id="email" required placeholder="Y O U R  E M A I L">
+                    <label style="letter-spacing: 5px;" for="">MESSAGE</label>
+                    <textarea name="message" id="message" rows="6" required></textarea>
+                    <input type="submit" name="submit" id="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+<!-- FOOTER -->
+<footer>
+    <p class="slogan">"Dunia ini penuh dengan orang-orang baik, Jika kamu tidak dapat menemukannya, jadilah salah satunya."</p>
+</footer>
+<div class="copyright">
+    <p>Dibuat sebagai tugas Pemrograman Web. <strong>&copycopyright by hendriwisnu </strong></p>
+</div>
+
+	<script src="script.js"></script>
+</html>
